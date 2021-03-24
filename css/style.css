@@ -1,11 +1,95 @@
 @import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
 
-body {
-  background-color: black;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header {
-  color: wheat;
-  font-family: Metal Mania, "Times New Roman", Times, serif;
-  text-align: center;
+ul {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.main-nav {
+  justify-content: space-between;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 4px 12px 2px;
+  align-items: center;
+}
+
+.main-nav-left {
+  width: 22%;
+  cursor: pointer;
+  justify-content: flex-start;
+}
+
+.main-nav-center {
+  cursor: pointer;
+}
+
+.main-nav-right {
+  width: 20%;
+  justify-content: flex-end;
+}
+
+.menu-icon-list,
+.search-icon-list,
+.article-title-list {
+  padding: 4px;
+}
+
+.search-icon-list,
+.article-title-list {
+  margin-left: 12px;
+}
+
+.menu-icon,
+.search-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.article-title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+
+.brand-icon {
+  height: 32px;
+}
+
+.subscribe-btn,
+.login-btn {
+  border-radius: 3px;
+  background-color: #567b95;
+  border: 1px solid #326891;
+  font-size: 11px;
+  line-height: 11px;
+  font-weight: 700;
+  padding: 8px;
+  color: #fff;
+}
+
+.subscribe-btn {
+  margin-right: 8px;
 }
