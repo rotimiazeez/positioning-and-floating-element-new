@@ -29,6 +29,10 @@ a {
   text-decoration: none;
 }
 
+a.hover-underline:hover {
+  text-decoration: underline;
+}
+
 .d-flex {
   display: flex;
 }
@@ -103,9 +107,13 @@ a {
 }
 
 .container {
-  max-width: 900px;
   margin: 0 auto;
   padding: 0 1.5em;
+}
+
+.main-content {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .title {
@@ -124,12 +132,54 @@ a {
 }
 
 .main-content-img {
-  margin: 1.5625rem auto;
+  margin: 16px 160px;
   width: 945px;
-  max-width: 1200px;
+}
+
+/* editors-pick */
+
+.editors-pick {
+  position: absolute;
+  right: 12px;
+  top: 1700px;
+}
+
+.editors-pick-header {
+  border-bottom: 1px solid rgb(226, 226, 226);
+  font-family: helvetica, arial, sans-serif;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 12px;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+}
+
+.editors-pick-wrapper {
+  width: 240px;
+  flex-direction: column;
+}
+
+.editors-pick-text {
+  margin-left: 4px;
+  padding: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.editors-pick-img {
+  float: left;
+  width: 75px;
+  height: 75px;
 }
 
 /* background-image */
+.theory-of-inflation {
+  margin-left: -160px;
+}
+
 .theory-of-inflation-image {
   background-image: url(../images/the-universe.png);
   position: relative;
@@ -295,9 +345,6 @@ a {
 .all-links .subscribe {
   padding-left: 1rem;
   border-left: 1px solid rgb(226, 226, 226);
-}
-
-.all-links .subscribe .subscribe_svg {
   display: inline-block;
   height: 13px;
   width: 13px;
