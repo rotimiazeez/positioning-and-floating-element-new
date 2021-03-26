@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: helvetica, arial, sans-serif;
 }
 
 ul {
@@ -48,7 +48,6 @@ a {
 
 .main-nav {
   justify-content: space-between;
-  border-bottom: 1px solid #e2e2e2;
   padding: 4px 12px 2px;
   align-items: center;
   position: fixed;
@@ -134,7 +133,6 @@ a {
 
 .title {
   font-size: 2.5em;
-  font-family: "Metal Mania", Georgia, "Times New Roman", Times, serif;
   font-weight: normal;
   margin-bottom: 32px;
 }
@@ -181,9 +179,12 @@ a {
   border: 1px solid #ccc;
 }
 
-.border-padding-top {
+.border-top {
   border-top: 1px solid #ebebeb;
-  padding-top: 20px;
+}
+
+.padding-top {
+  padding-top: 16px;
 }
 
 .main-content-fig {
@@ -206,7 +207,6 @@ a {
   margin-top: 48px;
   font-size: 0.875rem;
   line-height: 1.125rem;
-  font-family: helvetica, arial, sans-serif;
   font-weight: 700;
   color: #333;
 }
@@ -238,16 +238,9 @@ a {
 }
 
 .editors-pick-header {
-  border-bottom: 1px solid rgb(226, 226, 226);
-  font-family: helvetica, arial, sans-serif;
-  font-weight: 700;
-  color: rgb(0, 0, 0);
-  margin-top: 0;
   margin-bottom: 15px;
   padding-bottom: 12px;
   font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 0.02em;
 }
 
 .editors-pick-wrapper {
@@ -259,7 +252,6 @@ a {
   margin-left: 4px;
   padding: 10px;
   font-size: 16px;
-  border-bottom: 1px solid rgb(226, 226, 226);
 }
 
 .editors-pick-img {
@@ -371,11 +363,9 @@ a {
   border-top: 1px solid #000;
   margin-right: 16px;
   margin-left: 2.5%;
-  padding-top: 16px;
 }
 
 .editors-picks-section {
-  padding-top: 16px;
   border-top: 1px solid #000;
 }
 
@@ -416,7 +406,6 @@ a {
   width: 28%;
   border-top: 1px solid #000;
   margin-left: 10px;
-  padding-top: 16px;
 }
 
 .most-popular-header {
@@ -425,10 +414,13 @@ a {
 
 .most-popular-headings {
   border-top: 1px solid rgb(226, 226, 226);
-  border-bottom: 1px solid rgb(226, 226, 226);
   padding: 16px 0;
   width: 100%;
   line-height: 1.425rem;
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgb(226, 226, 226);
 }
 
 .no-padding-left {
@@ -477,7 +469,6 @@ a {
 
 .homepage-link {
   color: rgb(86, 123, 149);
-  font-family: helvetica, arial, sans-serif;
   font-size: 11px;
 }
 
