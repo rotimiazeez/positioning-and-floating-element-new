@@ -51,6 +51,12 @@ a {
   border-bottom: 1px solid #e2e2e2;
   padding: 4px 12px 2px;
   align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
 }
 
 .main-nav-left {
@@ -112,7 +118,7 @@ a {
 }
 
 .container {
-  margin: 0 auto;
+  margin: 120px auto 0;
   padding: 0 1.5em;
 }
 
