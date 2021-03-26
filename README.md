@@ -1,10 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Hello World
+# Positioning and Floating Element
 
-> A basic "Hello world" page that illustrate the use of tools and best practices for future Microverse projects.
+> A project that illustrates the layout of the page's basic structure using empty semantic HTML elements that are appropriately sized and positioned with CSS.
 
-Additional description about the project and its features.
+Additional description of the project and its features.
 
 ## Built With
 
@@ -14,7 +14,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link - coming soon]()
+[Live Demo Link](harzeyzh-nyt-clone.netlify.app)
 
 ## Getting Started
 
@@ -31,7 +31,7 @@ To get a local copy up and running follow these simple example steps.
 - Clone the project
 
 ```bash
-git clone https://github.com/rotimiazeez/hello-world.git
+git clone https://github.com/rotimiazeez/positioning-and-floating-element-new.git
 
 ```
 
