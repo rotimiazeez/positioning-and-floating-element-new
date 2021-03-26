@@ -16,6 +16,15 @@ Additional description of the project and its features.
 
 [Live Demo Link](harzeyzh-nyt-clone.netlify.app)
 
+## Screenshot
+
+<details>
+    <summary>Click here to see full screenshot</summary>
+
+![Full Screenshot](https://user-images.githubusercontent.com/36057474/112679479-8130c000-8e6c-11eb-90ec-bd243e306041.png)
+
+</details>
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.

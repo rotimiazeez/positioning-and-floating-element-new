@@ -231,8 +231,6 @@ a {
   line-height: 1rem;
 }
 
-/* editors-pick */
-
 .editors-pick {
   position: absolute;
   right: 12px;
@@ -270,7 +268,6 @@ a {
   height: 75px;
 }
 
-/* background-image */
 .theory-of-inflation {
   margin-left: -160px;
 }
@@ -349,15 +346,11 @@ a {
   bottom: 50%;
 }
 
-/* youtube-video */
-
 .iframe {
   height: 315px;
   width: 560px;
   border: none;
 }
-
-/* image2 */
 
 .main-content-img-spiral {
   width: 600px;
@@ -373,7 +366,6 @@ a {
   color: #888;
 }
 
-/* space-astronomy */
 .space-and-astronomy {
   width: 65%;
   border-top: 1px solid #000;
@@ -420,7 +412,6 @@ a {
   display: inline-block;
 }
 
-/* most-popular */
 .most-popular {
   width: 28%;
   border-top: 1px solid #000;
@@ -460,13 +451,11 @@ a {
   margin-bottom: 200px;
 }
 
-/* Footer */
 .footer-header {
   text-transform: uppercase;
   line-height: 15px;
   font-weight: 700;
   color: rgb(51, 51, 51);
-  display: flex;
   font-size: 13px;
 }
 
@@ -482,7 +471,6 @@ a {
 }
 
 .new-york-times-image {
-  display: block;
   height: 44px;
   width: 184px;
 }
