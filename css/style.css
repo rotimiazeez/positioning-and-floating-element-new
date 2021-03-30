@@ -1,11 +1,529 @@
-@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
-
-body {
-  background-color: black;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header {
-  color: wheat;
-  font-family: Metal Mania, "Times New Roman", Times, serif;
+body {
+  font-family: helvetica, arial, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.hover-underline:hover {
+  text-decoration: underline;
+  text-decoration-color: #000;
+}
+
+.hover-transparent:hover {
+  color: rgb(102, 102, 102);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.main-nav {
+  justify-content: space-between;
+  padding: 4px 12px 2px;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.main-nav-left {
+  width: 22%;
+  cursor: pointer;
+  justify-content: flex-start;
+}
+
+.main-nav-center {
+  cursor: pointer;
+}
+
+.main-nav-right {
+  width: 20%;
+  justify-content: flex-end;
+}
+
+.menu-icon-list,
+.search-icon-list,
+.article-title-list {
+  padding: 4px;
+}
+
+.search-icon-list,
+.article-title-list {
+  margin-left: 12px;
+}
+
+.menu-icon,
+.search-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.article-title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+
+.brand-icon {
+  height: 32px;
+}
+
+.subscribe-btn,
+.login-btn {
+  border-radius: 3px;
+  background-color: #567b95;
+  border: 1px solid #326891;
+  font-size: 11px;
+  line-height: 11px;
+  font-weight: 700;
+  padding: 8px;
+  color: #fff;
+}
+
+.subscribe-btn {
+  margin-right: 8px;
+}
+
+.container {
+  margin: 120px auto 0;
+  padding: 0 1.5em;
+}
+
+.main-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header-text {
+  width: 45%;
+  margin: 32px auto;
+}
+
+.title {
+  font-size: 2.5em;
+  font-weight: normal;
+  margin-bottom: 32px;
+}
+
+.social-icons-wrapper {
+  margin-bottom: 32px;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.comment-button {
+  width: 50%;
+  border-radius: 3px;
+  background-color: rgb(86, 123, 149);
+  border: 1px solid rgb(50, 104, 145);
+  color: white;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  height: 36px;
+  text-transform: uppercase;
+  transition: background-color 0.6s ease 0s;
+}
+
+.social-icons {
+  font-size: 100%;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.social-icon {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border: 1px #eee solid;
+  border-radius: 100%;
+  padding: 5px;
+}
+
+.social-icon:hover {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.border-top {
+  border-top: 1px solid #ebebeb;
+}
+
+.padding-top {
+  padding-top: 16px;
+}
+
+.main-content-fig {
+  margin: 0 15%;
+  width: 945px;
+}
+
+.main-content-img {
+  width: 100%;
+}
+
+.main-content-img-cap {
+  width: 560px;
+  margin: 0.625rem 1.25rem 0 0;
+  font-size: 13px;
+  color: #888;
+}
+
+.author-wrapper {
+  margin-top: 48px;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.author {
+  font: inherit;
+}
+
+.hover-no-underline {
+  text-decoration: underline;
+  text-decoration-color: #ccc;
+}
+
+.hover-no-underline:hover {
+  text-decoration: none;
+}
+
+.date {
+  font-weight: 500;
+  margin: 1rem 0;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+}
+
+.editors-pick {
+  position: absolute;
+  right: 12px;
+  top: 1700px;
+}
+
+.editors-pick-header {
+  margin-bottom: 15px;
+  padding-bottom: 12px;
+  font-size: 14px;
+}
+
+.editors-pick-wrapper {
+  width: 240px;
+  flex-direction: column;
+}
+
+.editors-pick-text {
+  margin-left: 4px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.editors-pick-img {
+  float: left;
+  width: 75px;
+  height: 75px;
+}
+
+.theory-of-inflation {
+  margin-left: -160px;
+}
+
+.theory-of-inflation-image {
+  background-image: url(../images/the-universe.png);
+  position: relative;
+  background-size: contain;
+  width: 945px;
+  height: 600px;
+  background-repeat: no-repeat;
+}
+
+.theory-of-inflation-text1,
+.theory-of-inflation-text2,
+.theory-of-inflation-text3,
+.theory-of-inflation-text4,
+.theory-of-inflation-text5,
+.theory-of-inflation-text6,
+.theory-of-inflation-text7,
+.theory-of-inflation-text8 {
+  position: absolute;
+  width: 24%;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  color: #000;
+}
+
+.theory-of-inflation-text1 {
+  top: 25%;
+  left: 0;
+  bottom: 50%;
+}
+
+.theory-of-inflation-text2 {
+  top: 25%;
+  left: 25%;
+  bottom: 50%;
+}
+
+.theory-of-inflation-text3 {
+  top: 25%;
+  left: 50%;
+  bottom: 50%;
+}
+
+.theory-of-inflation-text4 {
+  top: 25%;
+  left: 75%;
+  bottom: 50%;
+}
+
+.theory-of-inflation-text5 {
+  top: 70%;
+  left: 0;
+  bottom: 50%;
+}
+
+.theory-of-inflation-text6 {
+  top: 70%;
+  left: 25%;
+  bottom: 50%;
+}
+
+.theory-of-inflation-text7 {
+  top: 70%;
+  left: 50%;
+  bottom: 50%;
+}
+
+.theory-of-inflation-text8 {
+  top: 70%;
+  left: 75%;
+  bottom: 50%;
+}
+
+.iframe {
+  height: 315px;
+  width: 560px;
+  border: none;
+}
+
+.main-content-img-spiral {
+  width: 600px;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  color: gray;
+}
+
+.iframe-caption {
+  width: 560px;
+  margin: 0.625rem 1.25rem 0 0;
+  font-size: 13px;
+  color: #888;
+}
+
+.space-and-astronomy {
+  width: 65%;
+  border-top: 1px solid #000;
+  margin-right: 16px;
+  margin-left: 2.5%;
+}
+
+.editors-picks-section {
+  border-top: 1px solid #000;
+}
+
+.space-and-astronomy-header {
+  font-size: 80%;
+  font-weight: bolder;
+}
+
+.space-and-astronomy-links {
+  padding: 10px;
+  width: 33.3%;
+}
+
+.space-and-astronomy-image {
+  width: 100%;
+}
+
+.figcaption {
+  color: #808080;
+  width: 100%;
+  font-size: 50%;
+  line-height: 1.23em;
+}
+
+.header-caption {
+  width: 100%;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  margin: 0;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+.most-popular {
+  width: 28%;
+  border-top: 1px solid #000;
+  margin-left: 10px;
+}
+
+.most-popular-header {
+  font-size: 80%;
+}
+
+.most-popular-headings {
+  border-top: 1px solid rgb(226, 226, 226);
+  padding: 16px 0;
+  width: 100%;
+  line-height: 1.425rem;
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.no-padding-left {
+  padding-left: 0;
+}
+
+.most-popular-link {
+  font-size: 1.325rem;
+  line-height: 1.125rem;
+  color: rgb(18, 18, 18);
+  font-weight: normal;
+  font-family: serif;
+}
+
+.editors-picks-header {
+  margin: 10px 0;
+}
+
+.margin-bottom {
+  margin-bottom: 200px;
+}
+
+.footer-header {
+  text-transform: uppercase;
+  line-height: 15px;
+  font-weight: 700;
+  color: rgb(51, 51, 51);
+  font-size: 13px;
+}
+
+.footer {
+  margin: 30px auto 100px;
+  border-top: 1px solid rgb(226, 226, 226);
+  width: 90%;
+}
+
+.new-york-times-logo {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-york-times-image {
+  height: 44px;
+  width: 184px;
+}
+
+.homepage-link {
+  color: rgb(86, 123, 149);
+  font-size: 11px;
+}
+
+.footer-wrapper {
+  flex-grow: 1;
+  padding: 20px 0;
+}
+
+.footer-list li {
+  padding: 6px 0;
+  font-size: 93%;
+}
+
+.subscribe-svg {
+  width: 13px;
+  height: 13px;
+}
+
+.subscribe {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.links {
+  font-size: 77%;
+}
+
+.nyt-copyright {
+  font-size: 73%;
+  color: #666;
+}
+
+.border-left {
+  border-left: 1px solid rgb(226, 226, 226);
+  padding-left: 10px;
+}
+
+.copyright-ul {
+  margin: 10px;
+  justify-content: space-between;
+}
+
+.fixed-position {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  left: 0;
+}
+
+.footer-paragraph {
+  margin-top: 20px;
+  padding: 20px 0;
+  border-top: 1px solid #000;
   text-align: center;
+  font-size: 90%;
 }

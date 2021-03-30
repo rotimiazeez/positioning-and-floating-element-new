@@ -1,8 +1,8 @@
 {
-  "name": "hello-world",
+  "name": "positioning-and-floating-element-new",
   "version": "1.0.0",
-  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
-  "main": "index.js",
+  "description": "A project that illustrates the layout of the page's basic structure using empty semantic HTML elements that are appropriately sized and positioned with CSS.",
+  "main": "index.html",
   "dependencies": {},
   "devDependencies": {
     "hint": "^6.0.7",
@@ -16,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rotimiazeez/hello-world.git"
+    "url": "git+https://github.com/rotimiazeez/positioning-and-floating-element-new.git"
   },
-  "author": "",
+  "author": "rotimiazeez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rotimiazeez/hello-world/issues"
+    "url": "https://github.com/rotimiazeez/positioning-and-floating-element-new/issues"
   },
-  "homepage": "https://github.com/rotimiazeez/hello-world#readme"
+  "homepage": "https://github.com/rotimiazeez/positioning-and-floating-element-new#readme"
 }
